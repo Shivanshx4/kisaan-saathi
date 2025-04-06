@@ -1,0 +1,193 @@
+{
+  "header": {
+    "home": "Home",
+    "farmers": "For Farmers",
+    "consumers": "For Consumers",
+    "support": "Support",
+    "login": "Login"
+  },
+  "footer": {
+    "tagline": "Connecting farmers directly with consumers for a better agricultural ecosystem.",
+    "quickLinks": "Quick Links",
+    "about": "About Us",
+    "farmers": "For Farmers",
+    "consumers": "For Consumers",
+    "blog": "Blog",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "reportIssue": "Report an Issue",
+    "faq": "FAQ",
+    "contact": "Contact Us",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies Policy",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Direct from Farm to Table",
+      "subtitle": "Kisaan Saathi connects farmers directly with consumers, eliminating middlemen and ensuring better prices for both.",
+      "farmerButton": "I'm a Farmer",
+      "consumerButton": "I'm a Consumer"
+    },
+    "features": {
+      "title": "Why Choose Kisaan Saathi?",
+      "subtitle": "Our platform offers unique benefits for both farmers and consumers.",
+      "directConnection": {
+        "title": "Direct Connection",
+        "description": "Connect directly with farmers or consumers without any intermediaries."
+      },
+      "betterPrices": {
+        "title": "Better Prices",
+        "description": "Farmers earn more, consumers pay less by eliminating middlemen."
+      },
+      "security": {
+        "title": "Secure Transactions",
+        "description": "Our platform ensures safe and transparent transactions."
+      },
+      "community": {
+        "title": "Community Support",
+        "description": "Join a growing community of farmers and conscious consumers."
+      }
+    },
+    "priceComparison": {
+      "title": "See the Difference",
+      "subtitle": "Compare traditional market prices with Kisaan Saathi prices.",
+      "traditional": {
+        "title": "Traditional Market",
+        "farmerPrice": "Farmer receives",
+        "middleman1": "Local aggregator adds",
+        "middleman2": "Wholesaler adds",
+        "retailer": "Retailer adds",
+        "consumerPrice": "Consumer pays",
+        "farmerShare": "Farmer's share"
+      },
+      "kisaanSaathi": {
+        "title": "Kisaan Saathi",
+        "farmerPrice": "Farmer receives",
+        "platformFee": "Platform fee",
+        "consumerPrice": "Consumer pays",
+        "farmerShare": "Farmer's share",
+        "savings": "Consumer savings"
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Simple steps to start using Kisaan Saathi",
+      "steps": {
+        "register": {
+          "title": "Register",
+          "description": "Sign up as a farmer or consumer with basic details."
+        },
+        "list": {
+          "title": "List Products",
+          "description": "Farmers can list their products with details and pricing."
+        },
+        "connect": {
+          "title": "Connect",
+          "description": "Consumers browse and connect with farmers in their region."
+        },
+        "transact": {
+          "title": "Transact",
+          "description": "Complete secure transactions and arrange delivery."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Join Kisaan Saathi?",
+      "subtitle": "Join thousands of farmers and consumers already benefiting from direct connections.",
+      "farmerButton": "Register as Farmer",
+      "consumerButton": "Register as Consumer"
+    }
+  },
+  "farmers": {
+    "title": "For Farmers",
+    "subtitle": "List your products and connect directly with consumers",
+    "benefits": {
+      "title": "Benefits for Farmers",
+      "better_prices": "Get better prices for your produce",
+      "direct_payment": "Receive payments directly",
+      "market_insights": "Get market insights and demand forecasts",
+      "wider_reach": "Reach consumers across multiple regions"
+    },
+    "how_to_sell": {
+      "title": "How to Sell on Kisaan Saathi",
+      "register": "Register your farm",
+      "verify": "Complete  \"How to Sell on Kisaan Saathi",
+      "register": "Register your farm",
+      "verify": "Complete verification process",
+      "list": "List your products with details and pricing",
+      "manage": "Manage orders and deliveries"
+    },
+    "dashboard": {
+      "title": "Farmer Dashboard",
+      "products": "Manage Products",
+      "orders": "View Orders",
+      "analytics": "Analytics",
+      "payments": "Payment History"
+    }
+  },
+  "consumers": {
+    "title": "For Consumers",
+    "subtitle": "Buy fresh produce directly from farmers",
+    "benefits": {
+      "title": "Benefits for Consumers",
+      "fresh_produce": "Get fresher produce directly from farms",
+      "lower_prices": "Pay lower prices by eliminating middlemen",
+      "transparency": "Complete transparency about product origin",
+      "support_farmers": "Support local farmers directly"
+    },
+    "how_to_buy": {
+      "title": "How to Buy on Kisaan Saathi",
+      "register": "Create your consumer account",
+      "browse": "Browse products by category or location",
+      "connect": "Connect with farmers and place orders",
+      "receive": "Receive fresh produce and provide feedback"
+    },
+    "product_categories": {
+      "title": "Product Categories",
+      "vegetables": "Vegetables",
+      "fruits": "Fruits",
+      "grains": "Grains & Pulses",
+      "dairy": "Dairy Products",
+      "other": "Other Farm Products"
+    }
+  },
+  "support": {
+    "title": "Support Center",
+    "subtitle": "Get help and report issues",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": [
+        {
+          "question": "How do I register as a farmer?",
+          "answer": "You can register as a farmer by clicking on the 'I'm a Farmer' button on the homepage and following the registration process."
+        },
+        {
+          "question": "How are payments processed?",
+          "answer": "Payments are processed securely through our platform. Consumers pay when placing an order, and farmers receive payment after successful delivery."
+        },
+        {
+          "question": "What if there's an issue with my order?",
+          "answer": "You can report issues through the 'Report an Issue' form in the Support section. Our team will assist you in resolving the issue."
+        }
+      ]
+    },
+    "reportForm": {
+      "title": "Report an Issue",
+      "name": "Your Name",
+      "email": "Email Address",
+      "issue_type": "Issue Type",
+      "description": "Describe the Issue",
+      "submit": "Submit Report"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "email": "support@kisaansaathi.com",
+      "phone": "+91 1234567890",
+      "hours": "Monday to Saturday, 9am to 6pm"
+    }
+  }
+}
+
