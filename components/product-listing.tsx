@@ -134,9 +134,9 @@ export default function ProductListing({ dictionary }: { dictionary: any }) {
   return (
     <div className="grid md:grid-cols-4 gap-6">
       <div className="md:col-span-1">
-        <Card>
+        <Card className="border-2 border-flag-green/20 shadow-lg sticky top-4">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+            <CardTitle className="flex items-center gap-2 text-navy-blue">
               <Filter className="h-5 w-5" />
               Filters
             </CardTitle>
@@ -237,7 +237,7 @@ export default function ProductListing({ dictionary }: { dictionary: any }) {
 
             <Button
               variant="outline"
-              className="w-full"
+              className="w-full hover:bg-flag-green/10 hover:border-flag-green"
               onClick={() => {
                 setPriceRange([0, 150])
                 setSelectedCategories([])
@@ -255,12 +255,17 @@ export default function ProductListing({ dictionary }: { dictionary: any }) {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((product) => (
-              <Card key={product.id} className="overflow-hidden">
+              <Card key={product.id} className="overflow-hidden card-hover border-2 border-transparent hover:border-flag-green/30">
                 <div className="aspect-square relative">
-                  <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
+                  <Image 
+                    src="https://images.pexels.com/photos/1300972/pexels-photo-1300972.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" 
+                    alt={product.name} 
+                    fill 
+                    className="object-cover" 
+                  />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-lg">{product.name}</CardTitle>
+                  <CardTitle className="text-lg text-navy-blue">{product.name}</CardTitle>
                   <div className="text-sm text-muted-foreground">
                     <div>by {product.farmer}</div>
                     <div>{product.location}</div>
@@ -278,7 +283,7 @@ export default function ProductListing({ dictionary }: { dictionary: any }) {
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full flex items-center gap-2">
+                  <Button className="w-full flex items-center gap-2 btn-primary">
                     <ShoppingCart className="h-4 w-4" />
                     Add to Cart
                   </Button>

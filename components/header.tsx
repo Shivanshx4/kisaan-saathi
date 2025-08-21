@@ -22,28 +22,34 @@ export default function Header({ lang, dictionary }: { lang: string; dictionary:
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href={`/${lang}`} className="flex items-center gap-2">
-            <Image src="/images/logo.png" alt="Kisaan Saathi Logo" width={40} height={40} className="h-10 w-10" />
-            <span className="text-xl font-bold text-navy-900">Kisaan Saathi</span>
+            <Image 
+              src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" 
+              alt="Kisaan Saathi Logo" 
+              width={40} 
+              height={40} 
+              className="h-10 w-10 rounded-full border-2 border-flag-green" 
+            />
+            <span className="text-xl font-bold text-navy-blue">Kisaan Saathi</span>
           </Link>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href={`/${lang}`} className="text-sm font-medium text-navy-900 hover:text-dark-green">
+          <Link href={`/${lang}`} className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300">
             {dictionary.home}
           </Link>
-          <Link href={`/${lang}/farmers`} className="text-sm font-medium text-navy-900 hover:text-dark-green">
+          <Link href={`/${lang}/farmers`} className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300">
             {dictionary.farmers}
           </Link>
-          <Link href={`/${lang}/consumers`} className="text-sm font-medium text-navy-900 hover:text-dark-green">
+          <Link href={`/${lang}/consumers`} className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300">
             {dictionary.consumers}
           </Link>
-          <Link href={`/${lang}/support`} className="text-sm font-medium text-navy-900 hover:text-dark-green">
+          <Link href={`/${lang}/support`} className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300">
             {dictionary.support}
           </Link>
 
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="flex items-center gap-1 text-dark-green">
+              <Button variant="ghost" size="icon" className="flex items-center gap-1 text-navy-blue hover:text-flag-green transition-colors duration-300">
                 <Globe className="h-4 w-4" />
                 <span>{languages.find((l) => l.code === lang)?.name || "English"}</span>
                 <span className="sr-only">Switch language</span>
@@ -63,7 +69,7 @@ export default function Header({ lang, dictionary }: { lang: string; dictionary:
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Button asChild className="bg-dark-green hover:bg-dark-green/90">
+          <Button asChild className="btn-primary">
             <Link href={`/${lang}/login`}>{dictionary.login}</Link>
           </Button>
         </nav>
@@ -71,7 +77,7 @@ export default function Header({ lang, dictionary }: { lang: string; dictionary:
         <div className="flex items-center gap-2 md:hidden">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="flex items-center gap-1 text-dark-green">
+              <Button variant="ghost" size="icon" className="flex items-center gap-1 text-navy-blue">
                 <Globe className="h-4 w-4" />
                 <span className="sr-only">Switch language</span>
               </Button>
@@ -102,33 +108,33 @@ export default function Header({ lang, dictionary }: { lang: string; dictionary:
           <nav className="flex flex-col space-y-4">
             <Link
               href={`/${lang}`}
-              className="text-sm font-medium text-navy-900 hover:text-dark-green"
+              className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.home}
             </Link>
             <Link
               href={`/${lang}/farmers`}
-              className="text-sm font-medium text-navy-900 hover:text-dark-green"
+              className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.farmers}
             </Link>
             <Link
               href={`/${lang}/consumers`}
-              className="text-sm font-medium text-navy-900 hover:text-dark-green"
+              className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.consumers}
             </Link>
             <Link
               href={`/${lang}/support`}
-              className="text-sm font-medium text-navy-900 hover:text-dark-green"
+              className="text-sm font-medium text-navy-blue hover:text-flag-green transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               {dictionary.support}
             </Link>
-            <Button asChild className="w-full bg-dark-green hover:bg-dark-green/90">
+            <Button asChild className="w-full btn-primary">
               <Link href={`/${lang}/login`} onClick={() => setIsMenuOpen(false)}>
                 {dictionary.login}
               </Link>

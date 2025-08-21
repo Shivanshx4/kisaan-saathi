@@ -10,8 +10,25 @@ import { getDictionary } from "@/lib/dictionaries"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Kisaan Saathi",
-  description: "Connect farmers directly with consumers",
+  title: "Kisaan Saathi - Direct Farm to Table Connection",
+  description: "Empowering farmers and connecting communities. Kisaan Saathi is a multilingual, AI-powered e-commerce platform that directly connects Indian farmers with consumers—eliminating middlemen, increasing trust, and ensuring fair prices for both parties.",
+  keywords: "farmers, agriculture, direct selling, farm to table, India, organic produce, fair prices",
+  authors: [{ name: "Kisaan Saathi Team" }],
+  openGraph: {
+    title: "Kisaan Saathi - Direct Farm to Table Connection",
+    description: "Connect farmers directly with consumers for better prices and fresher produce",
+    type: "website",
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kisaan Saathi - Direct Farm to Table Connection",
+    description: "Connect farmers directly with consumers for better prices and fresher produce",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export async function generateStaticParams() {

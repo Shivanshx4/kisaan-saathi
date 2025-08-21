@@ -68,29 +68,29 @@ export default function FarmerDashboard({ dictionary }: { dictionary: any }) {
 
   return (
     <Tabs defaultValue="products" className="space-y-4">
-      <TabsList className="grid grid-cols-4 gap-4">
-        <TabsTrigger value="products" className="flex items-center gap-2">
+      <TabsList className="grid grid-cols-4 gap-4 bg-gradient-to-r from-saffron/10 to-flag-green/10 p-2 rounded-xl">
+        <TabsTrigger value="products" className="flex items-center gap-2 data-[state=active]:bg-flag-green data-[state=active]:text-white transition-all duration-300">
           <Package className="h-4 w-4" />
           {dictionary.dashboard.products}
         </TabsTrigger>
-        <TabsTrigger value="orders" className="flex items-center gap-2">
+        <TabsTrigger value="orders" className="flex items-center gap-2 data-[state=active]:bg-saffron data-[state=active]:text-white transition-all duration-300">
           <ShoppingCart className="h-4 w-4" />
           {dictionary.dashboard.orders}
         </TabsTrigger>
-        <TabsTrigger value="analytics" className="flex items-center gap-2">
+        <TabsTrigger value="analytics" className="flex items-center gap-2 data-[state=active]:bg-navy-blue data-[state=active]:text-white transition-all duration-300">
           <TrendingUp className="h-4 w-4" />
           {dictionary.dashboard.analytics}
         </TabsTrigger>
-        <TabsTrigger value="payments" className="flex items-center gap-2">
+        <TabsTrigger value="payments" className="flex items-center gap-2 data-[state=active]:bg-flag-green data-[state=active]:text-white transition-all duration-300">
           <BarChart className="h-4 w-4" />
           {dictionary.dashboard.payments}
         </TabsTrigger>
       </TabsList>
 
       <TabsContent value="products" className="space-y-4">
-        <Card>
+        <Card className="border-2 border-flag-green/20 shadow-lg">
           <CardHeader>
-            <CardTitle>Add New Product</CardTitle>
+            <CardTitle className="text-navy-blue text-xl">Add New Product</CardTitle>
             <CardDescription>Add a new product to your inventory</CardDescription>
           </CardHeader>
           <CardContent>
@@ -141,15 +141,15 @@ export default function FarmerDashboard({ dictionary }: { dictionary: any }) {
                 <Textarea id="description" placeholder="Enter product description" />
               </div>
               <div className="flex items-end">
-                <Button className="w-full">Add Product</Button>
+                <Button className="w-full btn-primary">Add Product</Button>
               </div>
             </form>
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="border-2 border-flag-green/20 shadow-lg">
           <CardHeader>
-            <CardTitle>Your Products</CardTitle>
+            <CardTitle className="text-navy-blue text-xl">Your Products</CardTitle>
             <CardDescription>Manage your product listings</CardDescription>
           </CardHeader>
           <CardContent>
@@ -175,10 +175,10 @@ export default function FarmerDashboard({ dictionary }: { dictionary: any }) {
                       {product.stock} {product.unit}
                     </TableCell>
                     <TableCell className="flex gap-2">
-                      <Button variant="outline" size="sm">
+                      <Button variant="outline" size="sm" className="hover:bg-saffron/10 hover:border-saffron">
                         Edit
                       </Button>
-                      <Button variant="destructive" size="sm">
+                      <Button variant="destructive" size="sm" className="hover:bg-red-600">
                         Delete
                       </Button>
                     </TableCell>

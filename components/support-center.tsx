@@ -18,9 +18,9 @@ export default function SupportCenter({ dictionary }: { dictionary: any }) {
 
   return (
     <div className="space-y-6">
-      <Card>
+      <Card className="border-2 border-flag-green/20 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
+          <CardTitle className="flex items-center gap-2 text-navy-blue">
             <HelpCircle className="h-5 w-5" />
             {dictionary.faq.title}
           </CardTitle>
@@ -40,7 +40,7 @@ export default function SupportCenter({ dictionary }: { dictionary: any }) {
             </Accordion>
           ) : (
             <div className="text-center py-4">
-              <p className="text-muted-foreground">No FAQs found matching your search.</p>
+              <p className="text-navy-blue/60">No FAQs found matching your search.</p>
               <Button variant="link" className="mt-2" onClick={() => setSearchTerm("")}>
                 Clear search
               </Button>
@@ -49,9 +49,9 @@ export default function SupportCenter({ dictionary }: { dictionary: any }) {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="border-2 border-saffron/20 shadow-lg">
         <CardHeader>
-          <CardTitle className="flex items-center gap-2">
+          <CardTitle className="flex items-center gap-2 text-navy-blue">
             <Phone className="h-5 w-5" />
             {dictionary.contact.title}
           </CardTitle>

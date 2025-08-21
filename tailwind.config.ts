@@ -54,17 +54,22 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
         // Custom colors based on the image
-        "dark-green": "#1a4d28",
-        "light-green": "#d9f2c4",
-        wheat: "#e9d28c",
+        // Indian flag inspired colors
+        "saffron": "#FF9933",
+        "flag-white": "#FFFFFF", 
+        "flag-green": "#138808",
+        "navy-blue": "#000080",
+        "dark-green": "#138808",
+        "light-green": "#e8f5e8",
+        wheat: "#FFF8DC",
         navy: {
-          900: "#1e2761",
-          800: "#2a3990",
+          900: "#000080",
+          800: "#1a1a80",
         },
         tan: {
-          100: "#e9d28c",
-          200: "#d4bc7d",
-          300: "#c0a76e",
+          100: "#FFF8DC",
+          200: "#F5DEB3",
+          300: "#DEB887",
         },
       },
       borderRadius: {

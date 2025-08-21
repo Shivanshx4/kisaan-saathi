@@ -13,12 +13,14 @@ export default async function Home({
   const dict = await getDictionary(params.lang)
 
   return (
-    <div className="space-y-16 pb-16">
+    <div className="space-y-0 pb-16">
       <Hero dictionary={dict.home.hero} />
+      <div className="space-y-20">
       <Features dictionary={dict.home.features} />
       <PriceComparison dictionary={dict.home.priceComparison} />
       <HowItWorks dictionary={dict.home.howItWorks} />
       <CallToAction dictionary={dict.home.cta} />
+      </div>
     </div>
   )
 }

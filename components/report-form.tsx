@@ -47,9 +47,9 @@ export default function ReportForm({ dictionary }: { dictionary: any }) {
   }
 
   return (
-    <Card>
+    <Card className="border-2 border-navy-blue/20 shadow-lg">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
+        <CardTitle className="flex items-center gap-2 text-navy-blue">
           <AlertTriangle className="h-5 w-5" />
           {dictionary.title}
         </CardTitle>
@@ -58,10 +58,10 @@ export default function ReportForm({ dictionary }: { dictionary: any }) {
       <CardContent>
         {isSubmitted ? (
           <div className="text-center py-6">
-            <div className="text-green-600 text-4xl mb-4">✓</div>
+            <div className="text-flag-green text-4xl mb-4">✓</div>
             <h3 className="text-lg font-medium mb-2">Thank you for your report!</h3>
             <p className="text-muted-foreground mb-4">Our team will review your report and take appropriate action.</p>
-            <Button onClick={() => setIsSubmitted(false)}>Submit Another Report</Button>
+            <Button onClick={() => setIsSubmitted(false)} className="btn-primary">Submit Another Report</Button>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -108,7 +108,7 @@ export default function ReportForm({ dictionary }: { dictionary: any }) {
               />
             </div>
 
-            <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Button type="submit" className="w-full btn-primary" disabled={isSubmitting}>
               {isSubmitting ? "Submitting..." : dictionary.submit}
             </Button>
           </form>
