@@ -1,5 +1,5 @@
 import { getDictionary } from "@/lib/dictionaries"
-import Hero from "@/components/hero"
+import EnhancedHero from "@/components/enhanced-hero"
 import Features from "@/components/features"
 import PriceComparison from "@/components/price-comparison"
 import HowItWorks from "@/components/how-it-works"
@@ -14,7 +14,7 @@ export default async function Home({
 
   return (
     <div className="space-y-0 pb-16">
-      <Hero dictionary={dict.home.hero} />
+      <EnhancedHero dictionary={dict.home.hero} />
       <div className="space-y-20">
       <Features dictionary={dict.home.features} />
       <PriceComparison dictionary={dict.home.priceComparison} />

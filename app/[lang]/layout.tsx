@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
-import Footer from "@/components/footer"
+import EnhancedFooter from "@/components/enhanced-footer"
 import { getDictionary } from "@/lib/dictionaries"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -51,7 +51,7 @@ export default async function RootLayout({
           <div className="flex min-h-screen flex-col">
             <Header lang={params.lang} dictionary={dict.header} />
             <main className="flex-1">{children}</main>
-            <Footer dictionary={dict.footer} />
+            <EnhancedFooter dictionary={dict.footer} lang={params.lang} />
           </div>
         </ThemeProvider>
       </body>

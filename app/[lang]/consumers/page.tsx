@@ -1,5 +1,5 @@
 import { getDictionary } from "@/lib/dictionaries"
-import ProductListing from "@/components/product-listing"
+import EnhancedProductListing from "@/components/enhanced-product-listing"
 
 export default async function ConsumersPage({
   params,
@@ -15,7 +15,7 @@ export default async function ConsumersPage({
         <div className="w-24 h-1 bg-gradient-to-r from-saffron via-flag-white to-flag-green mx-auto mb-6"></div>
         <p className="text-xl text-navy-blue/80 max-w-2xl mx-auto">{dict.consumers.subtitle}</p>
       </div>
-      <ProductListing dictionary={dict.consumers} />
+      <EnhancedProductListing dictionary={dict.consumers} />
     </div>
   )
 }
